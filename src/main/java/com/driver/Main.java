@@ -10,10 +10,13 @@ class B extends A{
         return "Method is overridden in Extendend class B";
     }
 }
+
 public class Main {
     public static void main(String args[]){
-        A obj1 = new B();
-        A obj2 = new A();
-        System.out.println(obj2.meth()+"\n"+obj1.meth());
+        B obj = new B();
+        obj.meth();
+
+        B obj1 = new B();
+        obj1.meth();
     }
 }
